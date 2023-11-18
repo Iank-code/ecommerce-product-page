@@ -30,9 +30,9 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="flex justify-between">
-      <div className="flex gap-10">
-        <span>sneakers</span>
+    <div className="flex justify-between items-center">
+      <div className="flex gap-10 items-center">
+        <h1 className="text-2xl font-['Kanit']">sneakers</h1>
 
         <div className="flex gap-3">
           {navLink.map((link, index) => {
@@ -45,9 +45,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div>
+      <div className="flex items-center">
         <img src={cart} alt="cart.svg" />
-        <img src={userImage} alt="userImage.png" />
+        <img src={userImage} alt="userImage.png" className="w-[40px]" />
       </div>
     </div>
   );
