@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import cart from "./../assets/navbar/iconCart.svg";
 import userImage from "./../assets/navbar/image-avatar.png";
 
@@ -37,9 +37,9 @@ export default function Navbar() {
         <div className="flex gap-3">
           {navLink.map((link, index) => {
             return (
-              <a key={index} href={link.path}>
+              <Link key={index} to={link.path}>
                 {link.name}
-              </a>
+              </Link>
             );
           })}
         </div>
