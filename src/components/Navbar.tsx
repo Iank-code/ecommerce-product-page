@@ -1,15 +1,15 @@
-import cart from "./../assets/navbar/iconCart.svg"
-import userImage from "./../assets/navbar/image-avatar.png"
+import cart from "./../assets/navbar/iconCart.svg";
+import userImage from "./../assets/navbar/image-avatar.png";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="flex justify-between">
       <div>
         <span>sneakers</span>
         <div></div>
       </div>
 
-      <div>
+      <div >
         <img src={cart} alt="cart.svg" />
         <img src={userImage} alt="userImage.png" />
       </div>
